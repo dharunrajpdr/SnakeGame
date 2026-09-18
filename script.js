@@ -10,9 +10,9 @@ const tile = canvas.width / grid;
 
 // Lower interval = faster snake.
 // The game starts slowly and gets faster as the snake grows.
-const START_SPEED = 220;
-const MIN_SPEED = 75;
-const SPEED_INCREASE_PER_SCORE = 6;
+const START_SPEED = 350;
+const MIN_SPEED = 180;
+const SPEED_INCREASE_PER_SCORE = 4;
 
 let snake, food, direction, nextDirection, score, gameOver, timer;
 let highScore = Number(localStorage.getItem("snakeHighScore") || 0);
